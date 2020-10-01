@@ -18,6 +18,7 @@ for (( ; ; )); do
             -xu $USERNAME -xp $PASSWORD -t $RECIPIENT \
             -o tls=yes -u "Web page changed" \
             -m "Visit it at $URL"
+        rm $FILE_OUT
         exit 0
     fi
     sleep $SLEEP_TIME
